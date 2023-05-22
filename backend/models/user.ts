@@ -13,6 +13,13 @@ const userSchema = new mongoose.Schema(
       trim: true,
       minLengthen: 3,
     },
+    userEmail: {
+      type: String,
+      required: true,
+      unique: true,
+      trim: true,
+      minLengthen: 3,
+    },
   },
   { timestamps: true }
 );
